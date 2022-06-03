@@ -1,0 +1,828 @@
+/**
+  * Name: Plumber
+  * Version: 2.0
+  * Author: CymolThemes
+  * Author URI: https://www.cymolthemes.com
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+/**
+  1. General
+     - Variables
+     - Extra-outer
+
+  2. Spacing
+
+  3. Color
+     - Skin-color, Skin-bg-color, Skin-border-color
+     - darkGrey-color, darkGrey-bg-color
+     - white-color, white-bg-color, white-border-color
+     - Grey-color, Grey-bg-color, grey-border-color
+
+  4. SocialIcon / TooltipTop
+
+  5. Slick_dots/arrows
+
+  6. TopBar
+
+  7. Header
+     - SiteBrand(logo)
+     - SiteNavigation(Menu)
+     - side-menu
+
+  8. Footer
+     - FirstFooter
+     - SecondFooter
+ 
+  9. GoTop BUtton
+
+  10. Page-Title-Row
+  
+  11. Inner-Pages
+      - team-member-single
+      - Classic_Blog
+      - Single_Blog
+      - Blog_Comment
+      - Contact_page
+      
+
+**/
+
+
+/* ===============================================
+   1. General
+------------------------*/
+
+/** Variables **/
+aside, footer, header, menu, nav, section {
+    display: block;
+}
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    outline: none;
+}
+a {
+    outline: none;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+p {
+    margin: 0 0 15px;
+}
+
+*::-moz-selection {
+    background: #f0542d;
+    color: #fff;
+    text-shadow: none;
+}
+::-moz-selection {
+    background: #f0542d;
+    color: #fff;
+    text-shadow: none;
+}
+::selection {
+    background: #f0542d;
+    color: #fff;
+    text-shadow: none;
+}
+
+
+/* clears the 'X' from Internet Explorer */
+
+/* clears the 'X' from Chrome */
+
+menu, ul {
+    margin: 10px 0;
+    padding: 0 0 0 0px;
+}
+
+body {
+    font-family: "Jost",sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #8b8b8a;
+    background-color: #fff;
+    letter-spacing: 0.3px;
+}
+h2, h3{ font-family: Jost ,sans-serif;margin-bottom: 15px;font-weight: 600;color: #364352;}
+h2 { font-size: 30px; line-height: 40px; }
+h3 { font-size: 27px; line-height: 37px; }
+
+
+/** Extra-outer **/
+body .page {
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+}
+body .site-main {
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+}
+a{
+    color: #364352;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+
+a.rs-layer { transition: unset; }
+.z-index_1{ z-index: -1; }
+
+/* ===============================================
+    2.Spacing
+------------------------*/
+
+/** Padding **/
+.spacing-1{padding: 45px 0 0 20px;}
+.spacing-2{padding-top: 10px;padding-bottom: 10px;}
+
+.p-20{ padding: 20px !important; }
+.pl-60{ padding-left: 60px !important; }
+.pt-70{ padding-top: 70px !important; }
+
+/** Margin **/
+.mt-10{ margin-top: 10px !important; }
+.mt_50{ margin-top: -50px !important; }
+.mt_60{ margin-top: -60px !important; }
+.mt_75{ margin-top: -75px !important; }
+.mt_90{ margin-top: -90px !important; }
+.mt_215{ margin-top: -215px !important; }
+.mb-20{ margin-bottom: 20px !important; }
+
+
+
+/* ===============================================
+   3. Color
+------------------------*/
+
+/** Skin-textcolor **/
+.cmt-textcolor-skincolor,
+.cmt-textcolor-skincolor h2,
+.cmt-textcolor-skincolor h3,
+.cmt-textcolor-skincolor a, .cmt-textcolor-skincolor i,
+:not(.cmt-bgcolor-darkgrey) .cmt-textcolor-skincolor a,
+:not(.cmt-bgcolor-darkgrey) .cmt-textcolor-skincolor i,
+:not(.cmt-bgcolor-darkgrey) .cmt-textcolor-skincolor a,
+:not(.cmt-bgcolor-darkgrey) .cmt-textcolor-skincolor i,
+a.cmt-textcolor-skincolor, i.cmt-textcolor-skincolor,
+:not(.cmt-bgcolor-darkgrey) a.cmt-textcolor-skincolor,
+:not(.cmt-bgcolor-darkgrey) i.cmt-textcolor-skincolor,
+:not(.cmt-bgcolor-darkgrey) .cmt-textcolor-skincolor,
+.cmt-bgcolor-darkgrey .cmt-textcolor-skincolor h2,
+.cmt-bgcolor-darkgrey .cmt-textcolor-skincolor h3,
+.cmt-bgcolor-darkgrey a:hover, .footer .social-icons li>a:hover i,
+.cmt-textcolor-white a:hover,
+.cmt-bgcolor-darkgrey a:hover i,
+.cmt-btn-color-skincolor, .testimonials.style1 .star-ratings li,
+.cmt-bgcolor-darkgrey .cmt-btn-color-skincolor,
+.cmt-bgcolor-darkgrey .cmt-btn-color-skincolor i,
+.cmt-bgcolor-grey .cmt-btn-color-skincolor,
+.cmt-btn-style-border.cmt-btn-color-skincolor,
+.cmt-icon_element-color-skincolor,
+.cmt-bgcolor-darkgrey .cmt-icon_element-color-skincolor i,
+.cmt-bgcolor-darkgrey .top_bar_contact_item .top_bar_icon i,
+nav.main-menu ul.menu li.active > a,
+a:hover, .cmt-bgcolor-darkgrey a:hover,
+.testimonials.style1:hover .testimonial-content:before,
+.top_bar_contact_item a:hover , .top_bar_contact_item a:hover i ,
+nav.main-menu ul.menu > li > a:hover,
+.social-icons > [class*='social-'] > a,
+.featured-imagebox .cmt-btn.btn-inline.cmt-icon-btn-right i,
+.footer .copyright a:hover{
+    color: #3ca94e;
+}
+
+/** Skin-bg-color **/
+
+.cmt-btn-style-fill.cmt-btn-color-skincolor,
+.cmt-btn.cmt-btn-style-border.cmt-btn-color-skincolor:not(.btn-inline):before,
+.cmt-btn.cmt-btn-style-fill.cmt-btn-color-dark:not(.btn-inline):before,
+.cmt-btn.cmt-btn-style-fill.cmt-btn-color-white:before ,
+.cmt-bgcolor-darkgrey .cmt-btn.cmt-btn-style-fill.cmt-btn-color-white:not(.btn-inline):before,
+.cmt-btn.cmt-btn-style-border.cmt-btn-color-skincolor:not(.btn-inline):hover,
+.cmt-btn.cmt-btn-style-fill.cmt-btn-color-dark:not(.btn-inline):hover,
+.cmt-btn.cmt-btn-style-fill.cmt-btn-color-white:hover ,
+.cmt-bgcolor-darkgrey .cmt-btn.cmt-btn-style-fill.cmt-btn-color-white:not(.btn-inline):hover,
+.featured-imagebox-services.style1 .featured-content:before,
+.social-icons > [class*='social-'] > a:hover,
+.featured-imagebox-services.style1:hover .featured-content:before,
+.cmt-progress-bar .progress-bar-color-bar_skincolor.progress-bar,
+.cmt-progress-bar .progress-bar-color-bar_skincolor.progress-bar:before,
+.featured-imagebox-portfolio.style2 .cmt-media-link a:hover,
+.featured-imagebox-services.style2 .featured-content a.cmt-btn i,
+.footer .social-icons li>a {
+    background-color: #3ca94e;
+}
+
+
+/** Skin-border-color **/
+.cmt-btn-style-fill.cmt-btn-color-skincolor,
+.cmt-btn-style-border.cmt-btn-color-skincolor,
+.cmt-btn.cmt-btn-style-fill.cmt-btn-color-dark:hover,
+.cmt-btn.cmt-btn-style-fill.cmt-btn-color-white:hover,
+.cmt-bgcolor-darkgrey .cmt-btn.cmt-btn-style-fill.cmt-btn-color-white:not(.btn-inline):hover,
+.cmt-btn.cmt-btn-style-border.cmt-btn-color-skincolor:not(.btn-inline),
+:not(.cmt-bgcolor-darkgrey) .cmt-textcolor-skincolor a, :not(.cmt-bgcolor-darkgrey) .cmt-textcolor-skincolor i,
+:not(.cmt-bgcolor-darkgrey) .cmt-textcolor-skincolor a, :not(.cmt-bgcolor-darkgrey) .cmt-textcolor-skincolor i ,
+.footer .social-icons li>a:hover,
+.social-icons > [class*='social-'] > a,
+.testimonials.style1:hover .testimonial-content:after {
+    border-color: #3ca94e;
+}
+
+
+nav.main-menu  {
+    border-top-color: #3ca94e !important;
+}
+
+/** dark(black)-color **/
+
+
+/** highlight-color **/
+
+/** highlight-bg-color **/
+
+.cmt-col-bgimage-yes .cmt-bg-layer:before, .cmt-col-bgimage-yes .cmt-bg-layer:after ,
+.featured-imagebox-portfolio.style2 .cmt-media-link a {
+    background-color: #1a2940;
+}
+
+
+/** .Darkgrey-color **/
+
+.cmt-btn.cmt-btn-style-border.cmt-btn-color-dark:hover,
+.cmt-btn.cmt-btn-style-border.cmt-btn-color-white:hover,
+.cmt-btn.cmt-btn-style-fill.cmt-btn-color-white,
+.cmt-btn.cmt-btn-style-fill.cmt-btn-color-white i,
+.cmt-bgcolor-darkgrey .cmt-btn.cmt-btn-style-fill.cmt-btn-color-skincolor:hover,
+.cmt-textcolor-white .cmt-btn.cmt-btn-style-fill.cmt-btn-color-skincolor:hover,
+.cmt-btn-color-dark, .cmt-btn-color-skincolor:hover,
+.cmt-bgcolor-darkgrey .cmt-btn.cmt-btn-style-fill.cmt-btn-color-white,
+.cmt-btn-style-fill.cmt-btn-color-white,
+.cmt-btn.cmt-btn-style-fill.cmt-btn-color-skincolor:not(.btn-inline):hover,
+.cmt-bgcolor-darkgrey .cmt-btn.cmt-btn-style-fill.cmt-btn-color-white:hover,
+.cmt-bgcolor-darkgrey .cmt-btn.cmt-btn-style-border.cmt-btn-color-white:hover,
+.cmt-btn.cmt-btn-style-border.cmt-btn-color-white:not(.btn-inline):hover,
+.cmt-list.cmt-list-style-icon .cmt-list-li-content,
+.cmt-btn.cmt-btn-color-white.cmt-btn-style-border:hover i,
+.cmt-progress-bar .progressbar-title, .cmt-progress-bar .progress-bar-percent{
+    color: #292929;
+}
+
+/** DarkGrey-bg-color **/
+.cmt-bgcolor-darkgrey ,
+.cmt-bgcolor-darkgrey > .cmt-bg-layer,
+.cmt-bgcolor-darkgrey > .cmt-bg-layer > .cmt-col-wrapper-bg-layer-inner,
+.cmt-btn.cmt-btn-style-fill.cmt-btn-color-dark,
+.cmt-btn.cmt-btn-style-border.cmt-btn-color-dark:not(.btn-inline):before ,
+.cmt-btn.cmt-btn-style-border.cmt-btn-color-dark:not(.btn-inline):hover ,
+.cmt-bgcolor-white .cmt-btn.cmt-btn-style-fill.cmt-btn-color-skincolor:not(.btn-inline):hover,
+.cmt-btn-color-skincolor:hover,
+.cmt-btn-style-border.cmt-btn-color-dark:hover  {
+    background-color: #292929;
+}
+
+
+.cmt-btn.cmt-btn-style-fill.cmt-btn-color-dark,
+.cmt-btn-style-border.cmt-btn-color-dark,
+.cmt-btn.cmt-btn-style-border.cmt-btn-color-dark:hover,
+.cmt-bgcolor-white .cmt-btn.cmt-btn-style-fill.cmt-btn-color-skincolor:not(.btn-inline):hover {
+    border-color: #292929;
+}
+
+
+/** .White-color **/
+.cmt-textcolor-white, .cmt-textcolor-white a, .cmt-textcolor-white span,
+.cmt-btn-color-white, .cmt-icon_element-color-white, .cmt-icon_element-color-white i, .cmt-textcolor-white h2, .cmt-textcolor-white h3, .cmt-textcolor-white a, .cmt-bgcolor-darkgrey h2, .cmt-bgcolor-darkgrey h3, .cmt-bgcolor-darkgrey a,
+.cmt-btn-style-fill.cmt-btn-color-skincolor,
+.cmt-bgcolor-darkgrey .cmt-btn.cmt-btn-style-fill.cmt-btn-color-white:not(.btn-inline):hover,
+.cmt-btn.cmt-btn-style-border.cmt-btn-color-dark:hover,
+.cmt-btn.cmt-btn-style-border.cmt-btn-color-skincolor:hover,
+.cmt-btn.cmt-btn-style-fill.cmt-btn-color-white:hover,
+.cmt-btn.cmt-btn-style-fill.cmt-btn-color-white:hover i,
+.cmt-btn.cmt-btn-style-fill.cmt-btn-color-white:hover,
+.cmt-bgcolor-darkgrey .cmt-btn-color-skincolor:hover i,
+.cmt-btn.cmt-btn-style-fill.cmt-btn-color-dark,
+.cmt-bgcolor-darkgrey .section-title h2.title,
+.cmt-box-view-overlay,
+.cmt-bgcolor-darkgrey .featured-icon-box.style1 .featured-desc p,
+.cmt-btn-style-fill.cmt-btn-color-skincolor:hover,
+.cmt-textcolor-white,
+.cmt-bgcolor-white .cmt-btn.cmt-btn-style-fill.cmt-btn-color-skincolor:not(.btn-inline):hover,
+.social-icons > [class*='social-'] > a:hover,
+.top_bar_contact_item {
+    color: #fff;
+}
+.cmt-btn-style-border.cmt-btn-color-dark:hover {
+    color: rgba(255,255,255,1) !important;
+}
+
+.cmt-bgcolor-darkgrey p, .cmt-bgcolor-darkgrey span, .cmt-bgcolor-darkgrey i  {
+    color: rgba(255,255,255,.9);
+}
+.footer p {
+    color: rgba(255,255,255,.85);
+}
+.top_bar_contact_item a, .top_bar_contact_item a i {
+    transition: all .8s;
+}
+
+/** White-bg-color **/
+.cmt-bgcolor-white,
+.cmt-bgcolor-white > .cmt-bg-layer,
+.cmt-bgcolor-white > .cmt-bg-layer > .cmt-col-wrapper-bg-layer-inner,
+.cmt-bgcolor-darkgrey .cmt-btn.cmt-btn-style-fill.cmt-btn-color-skincolor:not(.btn-inline):before,
+.cmt-btn.cmt-btn-style-border.cmt-btn-color-white:not(.btn-inline):hover:before,
+.cmt-bgcolor-darkgrey .cmt-btn.cmt-btn-style-fill.cmt-btn-color-skincolor:not(.btn-inline):hover,
+.cmt-btn.cmt-btn-style-border.cmt-btn-color-white:not(.btn-inline):hover,
+.cmt-btn-style-fill.cmt-btn-color-white,
+.top_bar .social-icons li a:hover,
+.cmt-btn.cmt-btn-style-fill.cmt-btn-color-skincolor:not(.btn-inline):hover {
+    background-color: #fff;
+}
+
+/** White-border-color **/
+.cmt-btn.cmt-btn-style-fill.cmt-btn-color-white,
+.cmt-btn-style-fill.cmt-btn-color-skincolor:hover,
+.cmt-bgcolor-darkgrey .cmt-btn.cmt-btn-style-fill.cmt-btn-color-skincolor:not(.btn-inline):hover{
+    border-color: #fff;
+}
+.featured-icon-box.style2 .featured-content .featured-desc p{
+    color: rgba(255,255,255,.75);
+}
+
+
+/** 4.Grey-color **/
+.cmt-bgcolor-grey,
+.cmt-bgcolor-grey > .cmt-bg-layer,
+.cmt-bgcolor-grey > .cmt-bg-layer > .cmt-col-wrapper-bg-layer-inner {
+    background-color: #f5f5f5;
+}
+
+/* ===============================================
+    Pre-loader
+------------------------*/
+#preloader {
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    background: #fff;
+}
+.blobs .loader-blob-center {
+    position: absolute;
+    background: #1c63b8;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    -webkit-transform: scale(0.9) translate(-50%, -50%);
+    transform: scale(0.9) translate(-50%, -50%);
+    -webkit-animation: loader-blob-grow linear 3.4s infinite;
+    animation: loader-blob-grow linear 3.4s infinite;
+    border-radius: 50%;
+    box-shadow: 0 -10px 40px -5px #1c63b8;
+}
+
+.loader-blob {
+    position: absolute;
+    background: #1c63b8;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-animation: blobs ease-out 3.4s infinite;
+    animation: blobs ease-out 3.4s infinite;
+    -webkit-transform: scale(0.9) translate(-50%, -50%);
+    transform: scale(0.9) translate(-50%, -50%);
+    -webkit-transform-origin: center top;
+    transform-origin: center top;
+    opacity: 0.5;
+}
+.loader-blob:nth-child(1) {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+.loader-blob:nth-child(2) {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+.loader-blob:nth-child(3) {
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+.loader-blob:nth-child(4) {
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+.loader-blob:nth-child(5) {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+@-webkit-keyframes blobs {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0) translate(calc(-330px - 50%), -50%);
+        transform: scale(0) translate(calc(-330px - 50%), -50%);
+    }
+    1% {
+        opacity: 1;
+    }
+    35%,65% {
+        opacity: 1;
+        -webkit-transform: scale(0.9) translate(-50%, -50%);
+        transform: scale(0.9) translate(-50%, -50%);
+    }
+    99% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(0) translate(calc(330px - 50%), -50%);
+        transform: scale(0) translate(calc(330px - 50%), -50%);
+    }
+}
+
+@keyframes blobs {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0) translate(calc(-330px - 50%), -50%);
+        transform: scale(0) translate(calc(-330px - 50%), -50%);
+    }
+    1% {
+        opacity: 1;
+    }
+    35%,65% {
+        opacity: 1;
+        -webkit-transform: scale(0.9) translate(-50%, -50%);
+        transform: scale(0.9) translate(-50%, -50%);
+    }
+    99% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(0) translate(calc(330px - 50%), -50%);
+        transform: scale(0) translate(calc(330px - 50%), -50%);
+    }
+}
+@-webkit-keyframes loader-blob-grow {
+    0%,  39% {
+        -webkit-transform: scale(0) translate(-50%, -50%);
+        transform: scale(0) translate(-50%, -50%);
+    }
+    40%, 42% {
+        -webkit-transform: scale(1, 0.9) translate(-50%, -50%);
+        transform: scale(1, 0.9) translate(-50%, -50%);
+    }
+    43%, 44% {
+        -webkit-transform: scale(1.2, 1.1) translate(-50%, -50%);
+        transform: scale(1.2, 1.1) translate(-50%, -50%);
+    }
+    45%, 46% {
+        -webkit-transform: scale(1.3, 1.2) translate(-50%, -50%);
+        transform: scale(1.3, 1.2) translate(-50%, -50%);
+    }
+    47%, 48% {
+        -webkit-transform: scale(1.4, 1.3) translate(-50%, -50%);
+        transform: scale(1.4, 1.3) translate(-50%, -50%);
+    }
+    52% {
+        -webkit-transform: scale(1.5, 1.4) translate(-50%, -50%);
+        transform: scale(1.5, 1.4) translate(-50%, -50%);
+    }
+    54% {
+        -webkit-transform: scale(1.7, 1.6) translate(-50%, -50%);
+        transform: scale(1.7, 1.6) translate(-50%, -50%);
+    }
+    58% {
+        -webkit-transform: scale(1.8, 1.7) translate(-50%, -50%);
+        transform: scale(1.8, 1.7) translate(-50%, -50%);
+    }
+    68%, 70% {
+        -webkit-transform: scale(1.7, 1.5) translate(-50%, -50%);
+        transform: scale(1.7, 1.5) translate(-50%, -50%);
+    }
+    78% {
+        -webkit-transform: scale(1.6, 1.4) translate(-50%, -50%);
+        transform: scale(1.6, 1.4) translate(-50%, -50%);
+    }
+    80%, 81% {
+        -webkit-transform: scale(1.5, 1.4) translate(-50%, -50%);
+        transform: scale(1.5, 1.4) translate(-50%, -50%);
+    }
+    82%, 83% {
+        -webkit-transform: scale(1.4, 1.3) translate(-50%, -50%);
+        transform: scale(1.4, 1.3) translate(-50%, -50%);
+    }
+    84%, 85% {
+        -webkit-transform: scale(1.3, 1.2) translate(-50%, -50%);
+        transform: scale(1.3, 1.2) translate(-50%, -50%);
+    }
+    86%, 87% {
+        -webkit-transform: scale(1.2, 1.1) translate(-50%, -50%);
+        transform: scale(1.2, 1.1) translate(-50%, -50%);
+    }
+    90%, 91% {
+        -webkit-transform: scale(1, 0.9) translate(-50%, -50%);
+        transform: scale(1, 0.9) translate(-50%, -50%);
+    }
+    92%, 100% {
+        -webkit-transform: scale(0) translate(-50%, -50%);
+        transform: scale(0) translate(-50%, -50%);
+    }
+}
+@keyframes loader-blob-grow {
+    0%,  39% {
+        -webkit-transform: scale(0) translate(-50%, -50%);
+        transform: scale(0) translate(-50%, -50%);
+    }
+    40%, 42% {
+        -webkit-transform: scale(1, 0.9) translate(-50%, -50%);
+        transform: scale(1, 0.9) translate(-50%, -50%);
+    }
+    43%, 44% {
+        -webkit-transform: scale(1.2, 1.1) translate(-50%, -50%);
+        transform: scale(1.2, 1.1) translate(-50%, -50%);
+    }
+    45%, 46% {
+        -webkit-transform: scale(1.3, 1.2) translate(-50%, -50%);
+        transform: scale(1.3, 1.2) translate(-50%, -50%);
+    }
+    47%, 48% {
+        -webkit-transform: scale(1.4, 1.3) translate(-50%, -50%);
+        transform: scale(1.4, 1.3) translate(-50%, -50%);
+    }
+    52% {
+        -webkit-transform: scale(1.5, 1.4) translate(-50%, -50%);
+        transform: scale(1.5, 1.4) translate(-50%, -50%);
+    }
+    54% {
+        -webkit-transform: scale(1.7, 1.6) translate(-50%, -50%);
+        transform: scale(1.7, 1.6) translate(-50%, -50%);
+    }
+    58% {
+        -webkit-transform: scale(1.8, 1.7) translate(-50%, -50%);
+        transform: scale(1.8, 1.7) translate(-50%, -50%);
+    }
+    68%, 70% {
+        -webkit-transform: scale(1.7, 1.5) translate(-50%, -50%);
+        transform: scale(1.7, 1.5) translate(-50%, -50%);
+    }
+    78% {
+        -webkit-transform: scale(1.6, 1.4) translate(-50%, -50%);
+        transform: scale(1.6, 1.4) translate(-50%, -50%);
+    }
+    80%, 81% {
+        -webkit-transform: scale(1.5, 1.4) translate(-50%, -50%);
+        transform: scale(1.5, 1.4) translate(-50%, -50%);
+    }
+    82%, 83% {
+        -webkit-transform: scale(1.4, 1.3) translate(-50%, -50%);
+        transform: scale(1.4, 1.3) translate(-50%, -50%);
+    }
+    84%, 85% {
+        -webkit-transform: scale(1.3, 1.2) translate(-50%, -50%);
+        transform: scale(1.3, 1.2) translate(-50%, -50%);
+    }
+    86%, 87% {
+        -webkit-transform: scale(1.2, 1.1) translate(-50%, -50%);
+        transform: scale(1.2, 1.1) translate(-50%, -50%);
+    }
+    90%, 91% {
+        -webkit-transform: scale(1, 0.9) translate(-50%, -50%);
+        transform: scale(1, 0.9) translate(-50%, -50%);
+    }
+    92%, 100% {
+        -webkit-transform: scale(0) translate(-50%, -50%);
+        transform: scale(0) translate(-50%, -50%);
+    }
+}
+
+
+/*  ===============================================
+    SocialIcon / TooltipTop
+------------------------*/
+ul.social-icons{
+    margin: 0;
+    padding: 0;
+}
+.social-icons li {
+    display: inline-block;
+    border: none;
+    z-index: 1;
+    position: relative;
+}
+.social-icons li{
+    margin: 0 2px;
+}
+.social-icons li:last-child{
+    margin-right: 0px;
+}
+.social-icons li a{
+    display: block;
+    min-width: 26px;
+    text-align: center;
+}
+.social-icons > [class*='social-'] > a  {
+    width: 33px;
+    height: 33px;
+    line-height: 33px;
+    margin: 0;
+    border: 1px solid;
+    text-align: center;
+    display: block;
+    background-color: transparent;
+    font-size: 13px;
+    border-radius: 50%;
+    -webkit-transition: all .3s ease-in-out 0s;
+    -moz-transition: all .3s ease-in-out 0s;
+    -ms-transition: all .3s ease-in-out 0s;
+    -o-transition: all .3s ease-in-out 0s;
+    transition: all .3s ease-in-out 0s;
+}
+
+
+/* TooltipTop */
+
+
+/*  ===============================================
+    Slick_dots/arrows
+------------------------*/
+
+
+/*  ===============================================
+    TopBar
+------------------------*/
+.top_bar {
+    width: 100%;
+    z-index: 1;
+    font-size: 15px;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #e9e9e9;
+}
+.top_bar_icon {
+    display: inline-block;
+    margin-right: 8px;
+}
+.top_bar_contact_item {
+    font-size: 14px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    display: inline-block;
+    border-left: 1px solid rgba(255,255,255,.14);
+}
+.top_bar_contact_item:nth-last-child(3){border-right: 1px solid rgba(255,255,255,.14);}
+.top_bar_contact_item:last-child{ margin-right: 22px; }
+.top_bar_contact_item:last-child {
+    margin-right: 0;
+    border-right: 1px solid rgba(255,255,255,.14);
+    border-left: none;
+}
+.top_bar .social-icons li {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    border-right: 1px solid rgba(255,255,255,.14);
+}
+.top_bar .social-icons li:last-child{
+    padding-right: 0;
+}
+.top_bar .social-icons li a{
+    min-width: 40px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/*  ===============================================
+    Header
+------------------------*/
+/** SiteBrand(logo) **/
+.site-branding img {
+    max-height: 42px;
+}
+.site-branding{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header_btn .cmt-btn{
+    padding: 12px 29px 11px 29px;
+}
+
+/* header_extra */
+.header_extra > div{
+    margin-left: 21px;
+    position: relative;
+}
+
+
+/** SiteNavigation(Menu) **/
+.site-navigation {
+    position: relative;
+    z-index: 4;
+}
+
+/* ===============================================
+   8. Footer
+------------------------*/
+.footer{
+    position: relative;
+    z-index: 1;
+    background-image: url(../images/footer-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+.widget ul, .widget ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.footer a , .footer span{ color: inherit; }
+.footer .social-icons li>a {
+    font-size: 14px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 6px;
+    border: 1px solid #1f2437;
+}
+.footer .social-icons li>a:hover{
+    background-color: transparent;
+}
+.footer .social-icons li>a,
+.footer .social-icons li>a i{
+    color: rgba(255,255,255,.8);
+}
+
+/* first-footer */
+.footer .first-footer {
+    padding: 70px 0 70px;
+}
+
+/* second-footer */
+
+/** widget_contact_wrapper **/
+
+/** images-gellary **/
+
+/** menu-footer-services **/
+
+/** copyright **/
+.copyright {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+}
+
+
+/* ===============================================
+  9. GoTop BUtton
+------------------------*/
+#totop{
+    font-weight: 900;
+    color: #fff;
+    display: none;
+    position: fixed;
+    right: 34px;
+    bottom: 50px;
+    z-index: 999;
+    height: 0;
+    width: 0;
+    font-size: 0;
+    text-align: center;
+    padding-top: 3px;
+    line-height: 34px;
+    border-radius: 3px;
+    transition: .3s ease-in-out;
+}
+@keyframes jump {
+    0% { bottom: 20px; } 50% { bottom: 40px; } 100% { bottom: 20px; }
+}
+
