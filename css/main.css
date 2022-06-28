@@ -33,12 +33,12 @@ p {
 }
 
 *::-moz-selection {
-    background: rgb(254, 107, 56);
+    background: #a25106;
     color: #fff;
     text-shadow: none;
 }
 ::-moz-selection {
-    background: rgb(254, 107, 56);
+    background: #a25106;
     color: #fff;
     text-shadow: none;
 }
@@ -145,7 +145,7 @@ i.cmt-textcolor-skincolor, :not(.cmt-bgcolor-darkgrey) a.cmt-textcolor-skincolor
 nav.main-menu ul.menu > li > a:hover,
 .social-icons > [class*='social-'] > a,
 .featured-imagebox .cmt-btn.btn-inline.cmt-icon-btn-right i, .footer .copyright a:hover{
-    color: rgb(254, 107, 56);
+    color: #a25106;
 }
 
 /** Skin-bg-color **/
@@ -167,7 +167,7 @@ nav.main-menu ul.menu > li > a:hover,
 .cmt-progress-bar .progress-bar-color-bar_skincolor.progress-bar:before,
 .featured-imagebox-portfolio.style2 .cmt-media-link a:hover,
 .featured-imagebox-services.style2 .featured-content a.cmt-btn i {
-    background-color: rgb(254, 107, 56);
+    background-color: #a25106;
 }
 
 
@@ -186,12 +186,12 @@ nav.main-menu ul.menu > li > a:hover,
 .featured-imagebox-portfolio.style1 .cmt-media-link a:hover,
 .social-icons > [class*='social-'] > a,
 .testimonials.style1:hover .testimonial-content:after {
-    border-color: rgb(254, 107, 56);
+    border-color: #a25106;
 }
 
 
 nav.main-menu  {
-    border-top-color: rgb(254, 107, 56) !important;
+    border-top-color: #a25106 !important;
 }
 
 /** dark(black)-color **/
@@ -249,6 +249,12 @@ nav.main-menu  {
 }
 
 
+#header-contact:hover {
+    color: black!important;
+    background-color: white;
+    border-color: white;
+}
+
 /** .White-color **/
 .cmt-textcolor-white, .cmt-textcolor-white a, .cmt-textcolor-white span,
 .cmt-btn-color-white, .cmt-icon_element-color-white, .cmt-icon_element-color-white i, .cmt-textcolor-white h2, .cmt-textcolor-white h3, .cmt-textcolor-white a,
@@ -297,6 +303,14 @@ nav.main-menu  {
 .top_bar .social-icons li a:hover,
 .cmt-btn.cmt-btn-style-fill.cmt-btn-color-skincolor:not(.btn-inline):hover {
     background-color: #fff;
+}
+
+#site-header-menu {
+    background-color: #373737!important;
+}
+
+.mega-menu-link{
+    color: white;
 }
 
 /** White-border-color **/
@@ -568,6 +582,15 @@ nav.main-menu  {
 /*  ===============================================
     SocialIcon / TooltipTop
 ------------------------*/
+
+.pp_details{
+    display: none;
+}
+
+.pp_content{
+    max-height: 600px;
+}
+
 ul.social-icons{
     margin: 0;
     padding: 0;
@@ -783,7 +806,6 @@ ul.social-icons{
     font-size: 15px;
     height: 50px;
     line-height: 50px;
-    border-bottom: 1px solid #e9e9e9;
 }
 .top_bar_icon {
     display: inline-block;

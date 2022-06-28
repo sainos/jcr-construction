@@ -59,7 +59,7 @@
 	/* header */
 	.cmt-stickable-header.fixed-header {
 		z-index: 111;
-		background-color: #fff;
+		background-color: #373737!important;
 		box-shadow: 0 0 10px 0 rgba(0, 43, 92, 0.08);
 	}
 	.fixed-header {
